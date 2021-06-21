@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1590329360 source:c:\users\edamski\desktop\programowanie\lokalnie\adrianbzdokprojekt\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<dirent.h>
+	<limits.h>
+	"structy.h"
+	"smieciarka.h"
+	"odczyt.h"
+	"komunikacja.h"
+	"kopia.h"
+
+1590253070 c:\users\edamski\desktop\programowanie\lokalnie\adrianbzdokprojekt\structy.h
+
+1590329776 c:\users\edamski\desktop\programowanie\lokalnie\adrianbzdokprojekt\odczyt.h
+
+1590330491 c:\users\edamski\desktop\programowanie\lokalnie\adrianbzdokprojekt\komunikacja.h
+
+1590330566 c:\users\edamski\desktop\programowanie\lokalnie\adrianbzdokprojekt\smieciarka.h
+
+1590332187 c:\users\edamski\desktop\programowanie\lokalnie\adrianbzdokprojekt\kopia.h
+

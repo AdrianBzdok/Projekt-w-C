@@ -1,0 +1,42 @@
+void smieciarkaFolderu(folder* folder){ //rekurencyjnie czysci pamiec folderu
+    if(folder->Directories!=NULL){
+        smieciarkaFolderu(folder->Directories);
+    }
+    if(folder->Files!=NULL){
+        smieciarkaPliku(folder->Files);
+    }
+    if(folder->Next!=NULL){
+        smieciarkaFolderu(folder->Next);
+    }
+    if(folder->Name!=NULL){
+        free(folder->Name);
+    }
+    if(folder->Filename!=NULL){
+        free(folder->Filename);
+    }
+    free(folder);
+    return;
+}
+void smieciarkaPliku(plik* plik){ //rekurencyjnie czysci pamiec pliku
+    if(plik->Name!=NULL){
+        free(plik->Name);
+    }
+    if(plik->Text!=NULL){
+        smieciarkaTekstu(plik->Text);
+    }
+    if(plik->Next!=NULL){
+        smieciarkaPliku(plik->Next);
+    }
+    free(plik);
+    return;
+}
+void smieciarkaTekstu(slowo* slowo){ //rekurencyjnie czysci pamiec slow
+    if(slowo->Next!=NULL){
+        smieciarkaTekstu(slowo->Next);
+    }
+    if(slowo->World!=NULL){
+        free(slowo->World);
+    }
+    free(slowo);
+    return;
+}

@@ -1,0 +1,2 @@
+main.a1::main.c
+smieciarka.a1::smieciarka.c
